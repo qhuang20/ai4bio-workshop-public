@@ -1,0 +1,28 @@
+:root{--ink:#27212c;--mila-purple:#662e7d;--lavender:#e6d7ec;--plum-text:#533362;--line:#d9dde4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}a{color:inherit}header,.hero-inner,.facts,.section{padding-inline:max(6vw,calc((100vw - 1280px)/2))}header{display:flex;align-items:center;justify-content:space-between;min-height:86px;gap:20px}.brand{display:flex;align-items:center;gap:16px;text-decoration:none}.brand b{font-size:2.35rem;letter-spacing:-.09em}.brand span{border-left:1px solid #a8aeb8;padding-left:15px;font-size:1.2rem;line-height:1.25;font-weight:600}nav{display:flex;gap:32px}nav a{text-decoration:none;font-size:.94rem}nav a:hover,.copy a:hover{text-decoration:underline}.hero{background-color:var(--lavender);color:var(--mila-purple);background-image:linear-gradient(110deg,transparent 35%,#ffffff52),linear-gradient(#662e7d0b 1px,transparent 1px),linear-gradient(90deg,#662e7d0b 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}.hero-inner{display:grid;grid-template-columns:44% 56%;align-items:center;padding-block:58px 52px;overflow:hidden}.edition,small{font:500 .81rem/1.4 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.13em}.edition{display:inline-block;border:1px solid #ffffff80;padding:5px 10px}h1{font-size:clamp(4.25rem,7.9vw,7.8rem);line-height:.93;margin:25px 0 17px;letter-spacing:-.067em}.subtitle{font-size:clamp(1.5rem,2.25vw,2.35rem);margin:0;letter-spacing:-.04em}.lead{max-width:360px;font-size:1.03rem;line-height:1.55;color:var(--plum-text);margin:17px 0 25px}.button{display:inline-block;background:white;border:1px solid #b49bc0;color:var(--mila-purple);text-decoration:none;padding:13px 22px;font-weight:650;border-radius:3px}.button:hover{background:#f3e9f6}figure{margin:0;position:relative}.helix{display:block;width:100%;height:auto}.facts{display:grid;grid-template-columns:repeat(3,1fr);padding-block:29px;border-bottom:1px solid var(--line);background:#f7f8fb}.facts div+div{border-left:1px solid var(--line);padding-left:12%}small{display:block;color:#47536b}.facts strong{display:block;margin-top:8px;font-size:1.18rem}.section{display:grid;grid-template-columns:42% 58%;padding-block:64px;border-bottom:1px solid var(--line);scroll-margin-top:12px}.section small{color:var(--mila-purple)}h2{font-size:clamp(2.2rem,4vw,4rem);letter-spacing:-.065em;line-height:1.03;margin:13px 0}.copy{max-width:675px}.copy p{font-size:1.07rem;line-height:1.65;margin:0 0 14px}.copy>p:first-child{font-size:1.27rem;line-height:1.5}.copy a{color:var(--mila-purple)}ul{padding:0;margin:0;list-style:none}li{padding:12px 0;border-bottom:1px solid var(--line);font-size:1.28rem}li:first-child{padding-top:0}a:focus-visible{outline:3px solid #ffb600;outline-offset:4px}@media(max-width:700px){header{padding-block:15px;flex-wrap:wrap;gap:16px}nav{gap:18px}nav a{font-size:.86rem}.hero-inner{grid-template-columns:1fr;padding-block:32px 8px}.lead{max-width:320px}figure{max-width:380px;width:90%;margin:-5px auto 0}.facts{grid-template-columns:1fr;gap:15px}.facts div,.facts div+div{padding:0;border:0;display:flex;justify-content:space-between;align-items:center;gap:12px}.facts strong{font-size:1rem;margin:0}.section{grid-template-columns:1fr;gap:18px;padding-block:36px}.brand b{font-size:2rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.logo{width:104px;height:auto}.edition{color:var(--mila-purple);border-color:#aa8ab7;border-radius:2px;font-size:1rem;letter-spacing:.11em}.subtitle{max-width:450px}.facts address{font-style:normal;line-height:1.45;font-size:.95rem;margin-top:7px}@media(max-width:700px){.facts div:nth-child(2){display:grid;grid-template-columns:1fr auto}.facts address{grid-column:1/-1;text-align:right}.logo{width:86px}}
+
+
+.proposal {
+  background: var(--lavender);
+  color: var(--mila-purple);
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+.proposal h2 { margin: 0; }
+.proposal p { max-width: 60ch; margin: 1rem 0 0; color: var(--plum-text); font-size: 1.07rem; line-height: 1.6; }
+.proposal .button { justify-self: start; }
+@media (max-width: 700px) {
+  .proposal { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.copy .prize-status { margin-top: 1.5rem; color: var(--mila-purple); }
+
+.sponsor {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 2rem max(6vw, calc((100vw - 1280px) / 2));
+  background: #f7f8fb;
+}
+.sponsor strong { font-size: 1.25rem; }
